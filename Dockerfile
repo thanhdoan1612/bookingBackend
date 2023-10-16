@@ -3,4 +3,4 @@ RUN mkdir /booking
 WORKDIR /booking
 COPY ./target/HotelBookingAPI-0.0.1-SNAPSHOT.jar .
 EXPOSE 8080
-CMD ["mvn","spring-boot:run"]
+CMD ["java","-jar","HotelBookingAPI-0.0.1-SNAPSHOT.jar"]
